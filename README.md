@@ -27,9 +27,15 @@ CodeWithChris. “SwiftUI Charts Basics Tutorial.” YouTube, CodeWithChris,
 https://www.youtube.com/watch?v=MyQy1E-bzEM
 - This video helped us in a basic understanding of the charts in SwiftUI
 
-Karin Prater. "Advanced SwiftUI Tutorial: Build a Complex App with Swift Charts for iOS 17 & macOS (Xcode 15 2023)." Youtube, Karin Prater,
+Karin Prater. "Advanced SwiftUI Tutorial: Build a Complex App with Swift Charts for iOS 17 & macOS (Xcode 15 2023)." YouTube, Karin Prater,
 https://www.youtube.com/watch?v=c9XxDjmLT24
--This video gave us a more detailed explanation of more complex charts in SwiftUI
+- This video gave us a more detailed explanation of more complex charts in SwiftUI
+
+DesignCode. "Build an Expense Tracker App in SwiftUI - full course." YouTube, DesignCode,
+https://www.youtube.com/watch?v=Bu6fAlltatA
+- This video helped in understaning of the structure of a finance tracking app.
+
+
 
 
 
