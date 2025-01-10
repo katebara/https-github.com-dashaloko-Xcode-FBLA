@@ -13,7 +13,8 @@
 
 #Instructions for Running Project:
 1. Use an apple device to download XCode through the AppStore or if using Windows any worspace supporting SwiftUI.
-2. Download all of the filed under the 
+2. Download the "FBLA Coding and Programming" folder to access all of the swft files
+3. Load the folder into the downloaded workspace and view the program.
 
 # Description:
 Lemoney is a finance tracking program that helps you manage your personal finances by tracking balance, income, and expenses. 
