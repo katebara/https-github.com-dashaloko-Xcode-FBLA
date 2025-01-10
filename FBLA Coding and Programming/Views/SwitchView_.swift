@@ -51,7 +51,7 @@ struct SwitchView_: View {
                             .background(Color("white"))
                             .cornerRadius(8)
                         }
-                        .onDelete(perform: deleteItem) // Attach delete functionality here
+                        .onDelete(perform: viewModel.deleteEntry) // Connect delete function to the swipe-to-delete gesture
                     }
                     .listStyle(InsetGroupedListStyle()) // Apply a clean list style
                     .navigationBarTitle("Entries", displayMode: .inline)
@@ -86,11 +86,6 @@ struct SwitchView_: View {
                 }
             }
         }
-    }
-    
-    // Function to delete entries
-    private func deleteItem(at offsets: IndexSet) {
-        viewModel.entries.remove(atOffsets: offsets)
     }
 }
 

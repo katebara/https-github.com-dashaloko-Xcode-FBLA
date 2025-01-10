@@ -50,10 +50,10 @@ class EntryInputViewViewModel: ObservableObject {
     // Load entries from persistent storage
     func loadEntries() {
         let path = URL.documentsDirectory.appendingPathComponent("entries.json")
-        guard let data = try? Data(contentsOf: path) else { return }
         do {
-            entries = try JSONDecoder().decode([Entry].self, from: data)
-            print("✅ Entries loaded successfully from DataFile.txt!")
+            let data = try Data(contentsOf: path)
+            let entries = try JSONDecoder().decode([Entry].self, from: data)
+            self.entries = entries // Set the entries to the loaded data
         } catch {
             print("😡 ERROR: Could not load entries \(error.localizedDescription)")
         }
@@ -63,18 +63,20 @@ class EntryInputViewViewModel: ObservableObject {
 
     // Delete an entry
     func deleteEntry(at offsets: IndexSet) {
-        entries.remove(atOffsets: offsets) // Remove from in-memory entries
-
-        // Save the updated entries to persistent storage
+        // Remove the entry from the list at the specified offsets
+        entries.remove(atOffsets: offsets)
+        
+        // Save the updated list back to the JSON file
         let path = URL.documentsDirectory.appendingPathComponent("entries.json")
         do {
             let data = try JSONEncoder().encode(entries)
             try data.write(to: path)
-            print("✅ Entry deleted and file updated successfully!")
+            print("✅ Entries deleted and file updated successfully!")
         } catch {
             print("😡 ERROR: Could not save entries after deletion \(error.localizedDescription)")
         }
     }
+
 
 
     // Debug the contents of the file
