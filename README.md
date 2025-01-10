@@ -11,6 +11,10 @@
 **School:** Alonso High School  
 **Grade Level:** 11th Grade 
 
+#Instructions for Running Project:
+1. Use an apple device to download XCode through the AppStore or if using Windows any worspace supporting SwiftUI.
+2. Download all of the filed under the 
+
 # Description:
 Lemoney is a finance tracking program that helps you manage your personal finances by tracking balance, income, and expenses. 
 The website is developed and programmed with SwiftUI.
